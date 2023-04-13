@@ -27,6 +27,7 @@ Build-Depends:
  libmaxminddb-dev,
  libmemcached-dev,
  libmnl-dev,
+ librdkafka,
  libmongoc-dev,
  libmono-2.0-dev [amd64 armel armhf i386 mipsel kfreebsd-amd64 kfreebsd-i386 ppc64 ppc64el s390x],
  libmosquitto-dev,
