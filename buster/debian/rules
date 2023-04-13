@@ -73,6 +73,7 @@ PACKAGE_GROUPS += outbound
 PACKAGE_GROUPS += websocket
 PACKAGE_GROUPS += autheph
 PACKAGE_GROUPS += kazoo
+PACKAGE_GROUPS += kafka
 PACKAGE_GROUPS += cnxcc
 PACKAGE_GROUPS += erlang
 PACKAGE_GROUPS += systemd
