@@ -701,6 +701,22 @@ Description: kazoo modules for the Kamailio SIP server
  per second even on low-budget hardware.
  .
  This package provides the Kazoo application server integration module for Kamailio.
+ 
+ Package: kamailio-kafka-modules
+ Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ kamailio (= ${binary:Version}),
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: kafka modules for the Kamailio SIP server
+ Kamailio is a very fast and flexible SIP (RFC3261)
+ server. Written entirely in C, Kamailio can handle thousands calls
+ per second even on low-budget hardware.
+ .
+ This package provides the kafka application server integration module for Kamailio.
 
 Package: kamailio-rabbitmq-modules
 Architecture: any
