@@ -13,7 +13,7 @@ RUN find /etc/apt -name '*.list' -exec sed -i 's/httpredir/deb/g' {} \;
 
 RUN rm -rf /var/lib/apt/lists/* && apt-get update
 RUN echo 'MIRRORSITE="http://deb.debian.org/debian"' > /etc/pbuilderrc
-RUN apt-get install -qq --assume-yes  clang-7 pbuilder 
+RUN apt-get install -qq --assume-yes  clang-7 pbuilder librdkafka1
 
 VOLUME /code
 
