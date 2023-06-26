@@ -56,5 +56,6 @@ docker run -i -t --rm -v `pwd`:/code:rw ${IMAGE}:${VERSION}-${DIST} /bin/bash
 To build kamailio against Debian stable using that container, run:
 ```
 cd /code
+apt update -y && apt install -y libwebsockets-dev
 make deb-stable
 ```
