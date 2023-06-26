@@ -25,7 +25,7 @@ make
 # build locally the image
 for instance:
 ```
-export DIST=buster VERSION=5.6.4
+export DIST=bullseye VERSION=5.6.4
 ```
 ```
 cd ${DIST}; docker build --tag=scud-kamailio-docker:${VERSION}-${DIST} .
@@ -56,6 +56,5 @@ docker run -i -t --rm -v `pwd`:/code:rw ${IMAGE}:${VERSION}-${DIST} /bin/bash
 To build kamailio against Debian stable using that container, run:
 ```
 cd /code
-apt update -y && apt install -y libwebsockets-dev
 make deb-stable
 ```
