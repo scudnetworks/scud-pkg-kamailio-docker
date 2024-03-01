@@ -11,6 +11,12 @@ RUN rm -rf /var/lib/apt/lists/* && apt-get update
 RUN echo MIRRORSITE=http://deb.debian.org/debian > /etc/pbuilderrc
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -qq --assume-yes  clang pbuilder 
 
+RUN apt-get install -y libpcre3-dev librdkafka-dev librdkafka1
+
+RUN mkdir -p /usr/lib64/
+RUN cd /usr/lib64/; ln -s /usr/lib/x86_64-linux-gnu/libssl.a libssl.a 
+RUN cd /usr/lib64/; ln -s /usr/lib/x86_64-linux-gnu/libcrypto.a libcrypto.a
+
 VOLUME /code
 
 RUN mkdir -p /usr/local/src/pkg

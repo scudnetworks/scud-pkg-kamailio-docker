@@ -25,10 +25,10 @@ make
 # build locally the image
 for instance:
 ```
-export DIST=bullseye VERSION=master
+export DIST=bookworm VERSION=master
 ```
 ```
-cd ${DIST}; docker build --tag=pkg-kamailio-docker:${VERSION}-${DIST} .
+cd ${DIST}; docker build --tag=scudnetworks/pkg-kamailio-docker:${VERSION}-${DIST} .
 ```
 
 or pull the image from Github Packages
