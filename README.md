@@ -25,7 +25,7 @@ make
 # build locally the image
 for instance:
 ```
-export DIST=bookworm VERSION=5.7.6
+export DIST=bookworm VERSION=5.7
 ```
 ```
 cd ${DIST}; docker build --tag=pkg-kamailio-docker:${VERSION}-${DIST} .
@@ -34,8 +34,6 @@ cd ${DIST}; docker build --tag=pkg-kamailio-docker:${VERSION}-${DIST} .
 or pull the image from Github Packages
 
 ```
-export VERSION=5.7
-export DIST=bookworm
 docker pull ghcr.io/kamailio/pkg-kamailio-docker:${VERSION}-${DIST}
 ```
 # run container
