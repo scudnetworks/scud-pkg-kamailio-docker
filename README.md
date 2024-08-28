@@ -25,7 +25,7 @@ make
 # build locally the image
 for instance:
 ```
-export DIST=bullseye VERSION=master
+export DIST=bulleye VERSION=5.7.6
 ```
 ```
 cd ${DIST}; docker build --tag=pkg-kamailio-docker:${VERSION}-${DIST} .
